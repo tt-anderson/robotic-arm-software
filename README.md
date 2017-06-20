@@ -76,6 +76,13 @@ println("INDEX: ", indexAngleFinal);
 //Write to the servo, the index final angle value
 arduino.servoWrite(indexServo, indexAngleFinal);  
 ```
+Use ``` printArray(Serial.list()); ``` to list all available serial ports.
+
+Configure the serial port, if needed:
+```java
+arduino = new Arduino(this, Arduino.list()[0], 57600);
+```
+
 ### License
 Copyright (c) 2017 Thomas Anderson
 
