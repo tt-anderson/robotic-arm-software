@@ -76,4 +76,4 @@ arduino.servoWrite(indexServo, indexAngleFinal);
 ### License
 Copyright (c) 2017 Thomas Anderson
 
-Licensed Under [MIT](https://github.com/tt-anderson/robotic-arm-software/blob/master/LICENSE)
+Licensed Under [MIT](https://github.com/tt-anderson/robotic-arm-software/blob/master/LICENSE).
