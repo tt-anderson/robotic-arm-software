@@ -84,7 +84,7 @@ arduino = new Arduino(this, Arduino.list()[0], 57600);
 ```
 
 ### Contact
-tander10@my.blueridgectc.edu
+ta0052@mix.wvu.edu
 
 ### License
 Copyright (c) 2017 Thomas Anderson
