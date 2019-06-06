@@ -7,7 +7,7 @@ This respository is intended for use with AGbotics' PROTO1 3D Printed Humanoid R
 ## Contact
 Thomas Anderson
 
-Founder / Software Engineer
+Co-Founder / Software Engineer
 
 AGbotics LLC
 
