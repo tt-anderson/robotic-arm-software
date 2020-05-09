@@ -9,7 +9,6 @@ import processing.serial.*;
 import org.firmata.*;
 import cc.arduino.*;
 
-
 PFont font;
 
 Arduino arduino;
@@ -35,20 +34,10 @@ public int oppAngle() {
   Vector metacarpal = pinky.bone(Bone.Type.TYPE_METACARPAL).basis().getZBasis();
   Vector proximal = oppThumb.bone(Bone.Type.TYPE_METACARPAL).basis().getZBasis();
 
-  //int oppAngle = (int) (acos(((metacarpal.dot(proximal) / (proximal.magnitude() * metacarpal.magnitude())))) * (180/PI));
-
   int oppAngle = (int) Math.abs(Math.toDegrees(metacarpal.angleTo(proximal)));
 
   return (int) Math.abs(oppAngle * norm(oppAngle, 0, 45));
 }
-
-// //0 to 180
-// public int leftFingerAngle(Finger finger) {
-//   Vector distal = finger.bone(Bone.Type.TYPE_DISTAL).basis().getZBasis();
-//   Vector metacarpal = finger.bone(Bone.Type.TYPE_METACARPAL).basis().getZBasis();
-//
-//   return  (int) Math.abs(Math.toDegrees(metacarpal.angleTo(distal)));
-// }
 
 public int fingerAngle(Finger finger) {
   Vector distal = finger.bone(Bone.Type.TYPE_DISTAL).basis().getZBasis();
